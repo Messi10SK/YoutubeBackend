@@ -3,7 +3,7 @@ constructor(
     statusCode, 
     message = "something went wrong",
     errors = [],
-    statck = ""
+    stack = ""
 ){
     super(message)
     this.statusCode = statusCode
@@ -11,10 +11,10 @@ constructor(
    this.message =message
    this.success = false;
     this.errors=errors
-    this.stack = statck
+    this.stack = stack
 
-if (statck) {
-    this.stack = statck;
+if (stack) {
+    this.stack = stack;
 } else {
 Error.captureStackTrace(this, this.constructor)
 }
