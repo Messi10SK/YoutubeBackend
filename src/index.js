@@ -1,11 +1,9 @@
-// import mongoose from'mongoose';
-// import { DB_NAME } from './constants.js';
+
 import dotenv from "dotenv"
 import connectDB from './db/index.js';
 import {app} from './app.js';
 
- // Set the number according to your application needs
-
+// Set the number according to your application needs
 dotenv.config({
     path:'./.env'
 })
@@ -24,6 +22,22 @@ connectDB()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+// import mongoose from'mongoose';
+// import { DB_NAME } from './constants.js';
 
 // import express from 'express';
 // const app = express();
